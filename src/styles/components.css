@@ -1,0 +1,52 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: clamp(4rem, 8vw, 6.5rem);
+  color: var(--spotlight-gold);
+}
+
+.hero-sub {
+  max-width: 650px;
+  font-size: 1.2rem;
+  color: var(--smoke-grey);
+  margin-top: 1.5rem;
+}
+
+.domain-grid {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.domain-card {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, var(--velvet-purple), #3b005f);
+  border-radius: 18px;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.domain-card:hover {
+  transform: translateY(-10px);
+}
+
+.join-btn {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 1rem 3rem;
+  border: 1px solid var(--spotlight-gold);
+  color: var(--spotlight-gold);
+  border-radius: 40px;
+  transition: all 0.4s ease;
+}
+
+.join-btn:hover {
+  background: var(--spotlight-gold);
+  color: black;
+}

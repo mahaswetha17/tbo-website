@@ -1,43 +1,26 @@
 import React from "react";
+import secretary from "/office/secretary.jpg";
+import joint_secretary from "/office/joint_secretary.jpg";
+import treasurer from "/office/treasurer.jpg";
+import actitude_head from "/office/actitude_head.jpg";
+import lit_head from "/office/lit_head.jpg";
+import pr_head from "/office/pr_head.jpg";
+import design_head from "/office/design_head.jpg";
+
+
 
 export default function OfficeBearers() {
   const members = [
-  {
-    name: "Manaswini",
-    role: "Secretary",
-    img: "/office/secretary.jpg"
-  },
-  {
-    name: "Kumaraguru",
-    role: "Joint Secretary",
-    img: "/office/joint_secretary.jpg"
-  },
-  {
-    name: "Niteesh",
-    role: "Treasurer",
-    img: "/office/treasurer.jpg"
-  },
-  {
-    name: "Infant",
-    role: "Head of Actitude",
-    img: "/office/actitude_head.jpg"
-  },
-  {
-    name: "Mahaswetha",
-    role: "Head of LiT",
-    img: "/office/lit_head.jpg"
-  },
-  {
-    name: "Surjeeth",
-    role: "Head of Public Relations",
-    img: "/office/pr_head.jpg"
-  },
-  {
-    name: "Hitesh",
-    role: "Head of Design",
-    img: "/office/design_head.jpg"
-  }
+  { name: "Manaswini", role: "Secretary", img: "/office/secretary.jpg" },
+  { name: "Kumaraguru", role: "Joint Secretary", img: "/office/joint_secretary.jpg" },
+  { name: "Niteesh", role: "Treasurer", img: "/office/treasurer.jpg" },
+  { name: "Infant", role: "Head of Actitude", img: "/office/actitude_head.jpg" },
+  { name: "Surjeeth", role: "Head of Public Relations", img: "/office/pr_head.jpg" },
+  { name: "Mahaswetha", role: "Head of LiT", img: "/office/lit_head.jpg" },
+  { name: "Hitesh", role: "Head of Design", img: "/office/design_head.jpg" }
 ];
+
+
 
 
   return (

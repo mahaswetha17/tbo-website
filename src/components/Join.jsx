@@ -1,16 +1,21 @@
 export default function Join() {
   return (
-    <section style={{ textAlign: "center" }}>
-      <h2>Join The Box Office</h2>
-      <p>If stories matter to you, you belong here.</p>
+    <section id="contact" className="join-section">
+      <h2>Join Us</h2>
+
+      <p>
+        Want to act, write, debate, speak or make films?  
+        Be a part of <strong>The Box Office (TBO)</strong> at MIT!
+      </p>
 
       <a
-        href="https://www.instagram.com/tbomit?igsh=cmo1NGEyMXhzdXln"
+        href="https://www.instagram.com/tbomit"
         target="_blank"
+        rel="noopener noreferrer"
         className="join-btn"
       >
-        Connect with Us
+        Connect on Instagram
       </a>
     </section>
-  )
+  );
 }

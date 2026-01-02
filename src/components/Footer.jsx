@@ -1,9 +1,8 @@
-import React from "react";
-
 export default function Footer() {
   return (
-    <footer>
-      © 2025 The Box Office – MIT Anna University, Chennai | All Rights Reserved
+    <footer className="footer">
+      <p>The Box Office (TBO) • MIT • Anna University</p>
+      <p>© 2026 All Rights Reserved</p>
     </footer>
   );
 }

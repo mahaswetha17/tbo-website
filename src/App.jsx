@@ -1,53 +1,59 @@
-import React from "react";
-import "./index.css";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Section from "./components/Section";
-import Footer from "./components/Footer";
-import Domains from "./components/Domains";
-import Connect from "./components/Connect";
+import React from 'react';
+import './App.css';
+
+import Vision from "./components/Vision";
+import Mission from "./components/Mission";
+import Achievements from "./components/Achievements";
 import OfficeBearers from "./components/OfficeBearers";
 import Gallery from "./components/Gallery";
+import Ventures from "./components/Ventures";
+import Join from "./components/Join";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 
 function App() {
   return (
-    <>
-      <Navbar />
+    <div className="theatre-root">
 
+      {/* Navigation Bar */}
+      <nav className="tbo-nav">
+        <div className="logo">TBO<span>.</span></div>
+
+        <div className="nav-links">
+          <a href="#about">The Club</a>
+          <a href="#ventures">Our Acts</a>
+          <a href="#contact">Join Us</a>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
       <Hero />
+
+      {/* About Section */}
+      <About />
+
+      {/* Vision Mission Achievements */}
+      <div className="vm-container">
+  <Vision />
+  <Mission />
+</div>
+
       
+      <Ventures />
 
-      <Section
-        title="About The Box Office (TBO)"
-        content={`The Box Office (TBO) is the official dramatics and literary club of Madras Institute of Technology, Anna University. We foster creativity and intellectual growth through drama, debates, films, writing and public speaking. At TBO, ideas turn into memorable creative experiences.`}
-      />
+      
+      <Gallery />
+      <Achievements />
 
-      <Section
-        title="Vision & Mission"
-        content={`We aim to cultivate a vibrant community of storytellers and critical thinkers. TBO empowers students to perform, debate and engage with diverse narratives. Our goal is to host impactful festivals that identify student talent, inspire artistic viewpoints and spark meaningful conversations.`}
-      />
+      <OfficeBearers />
+      <Join />
 
 
-      <Section
-        title="Our Ventures"
-        content={`Sivaranjani Drama • MITiMUN • Mitafest Drama • O’See Matinee • Samhita Escape Room • Aval Anthology of Short Films • Airport Awareness Street Play`}
-      />
-
-      <Section
-        title="Achievements"
-        content={`MITiMUN'25 attracted over 130 participants across more than 10 colleges. Our Escape Room event had 150+ participants. Our dramas and Aval anthology gained overwhelming positive responses campus-wide.`}
-      />
-
-  
-
-      <Domains />
-<OfficeBearers />
-<Gallery />
-<Connect />
-
+      {/* Footer */}
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,0 +1,232 @@
+/* Import a theatrical Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --theater-black: #0a0a0a;
+  --velvet-red: #660000;
+  --spotlight-gold: #d4af37;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--theater-black);
+  color: var(--white);
+  font-family: 'Playfair Display', serif;
+
+  margin: 0;
+  background-color: var(--theater-black);
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+}
+.theatre-root {
+  border-top: 6px solid var(--velvet-red);
+}
+h1, h2, h3 {
+  color: var(--spotlight-gold);
+  letter-spacing: 1px;
+}
+.card:hover {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+  transform: scale(1.02);
+  transition: 0.3s ease;
+}
+.gallery {
+  background:
+    linear-gradient(to bottom, #220000, #000000);
+}
+.gallery img {
+  border: 2px solid var(--spotlight-gold);
+}
+.gallery {
+  background: #111;
+  padding: 40px;
+}
+.ventures-section {
+  background: linear-gradient(#2b0000, #000000);
+  padding: 60px 20px;
+}
+
+.ventures-title {
+  color: #d4af37;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.ventures-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #ddd;
+}
+
+.ventures-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.venture-card {
+  border: 1px solid #d4af37;
+  padding: 20px;
+  background: #0a0a0a;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.venture-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+.join-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(#000000, #220000);
+}
+
+.join-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  border: 1px solid #d4af37;
+  color: #d4af37;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.join-btn:hover {
+  background: #d4af37;
+  color: #000;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #000;
+  color: #d4af37;
+}
+.theatre-card {
+  background: linear-gradient(#2b0000, #000000);
+  border: 1px solid #d4af37;
+  border-radius: 14px;
+  padding: 25px;
+  margin: 15px 0;
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+  transition: 0.3s;
+}
+
+.theatre-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.45);
+}
+
+.theatre-card h2,
+.theatre-card h3 {
+  color: #d4af37;
+}
+
+.theatre-card p,
+.theatre-card li {
+  color: #eee;
+}
+#about {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+.vm-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.vm-container .theatre-card {
+  height: 100%;
+}
+@media (max-width: 768px) {
+  .vm-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Nav Bar */
+.tbo-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 10%;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.logo span { color: var(--spotlight-gold); }
+
+.nav-links a {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 2rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Hero Image & Overlay */
+.hero {
+  height: 90vh;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.7), var(--theater-black)),
+              url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&q=80&w=2000');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.theatre-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(3rem, 10vw, 6rem); /* Responsive text size */
+  color: var(--spotlight-gold);
+  margin: 10px 0;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.gold-btn {
+  background: transparent;
+  border: 1px solid var(--spotlight-gold);
+  color: var(--spotlight-gold);
+  padding: 12px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.gold-btn:hover {
+  background: var(--spotlight-gold);
+  color: black;
+}
+
+/* Stats Strip */
+.stats-strip {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 10%;
+  background: var(--velvet-red);
+  border-top: 2px solid var(--spotlight-gold);
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  font-family: 'Playfair Display', serif;
+}
